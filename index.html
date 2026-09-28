@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Darjeeling Stays | Stay Closer to the Hills</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="brand">
+            <span class="brand-main">DARJEELING</span>
+            <span class="brand-sub">STAYS</span>
+        </div>
+
+        <nav>
+            <a href="#stays">Stays</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="nav-button" onclick="becomeHost()">
+            List Your Property
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                THE HILLS ARE CALLING
+            </p>
+
+            <h1>
+                Stay closer<br>
+                to the <em>mountains.</em>
+            </h1>
+
+            <p class="hero-description">
+                Discover handpicked homestays, boutique hotels
+                and quiet escapes across Darjeeling.
+            </p>
+
+            <button class="explore-button" onclick="scrollToStays()">
+                Explore Stays
+                <span>↓</span>
+            </button>
+
+        </div>
+
+        <div class="hero-location">
+            DARJEELING · WEST BENGAL · INDIA
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro">
+
+        <div class="intro-small">
+            DARJEELING, REIMAGINED
+        </div>
+
+        <div class="intro-text">
+
+            <h2>
+                More than a place<br>
+                to <em>sleep.</em>
+            </h2>
+
+            <p>
+                From quiet mountain homes to charming boutique stays,
+                we help you discover places that make your Darjeeling
+                journey memorable.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- STAYS -->
+
+    <section class="stays" id="stays">
+
+        <div class="section-top">
+
+            <div>
+                <p class="eyebrow dark">
+                    HANDPICKED FOR YOU
+                </p>
+
+                <h2>Stay somewhere<br><em>special.</em></h2>
+            </div>
+
+            <p class="section-description">
+                A collection of beautiful stays selected for their
+                location, comfort and character.
+            </p>
+
+        </div>
+
+
+        <div class="property-grid">
+
+
+            <!-- PROPERTY 1 -->
+
+            <article class="property">
+
+                <div class="property-image property-one">
+
+                    <span class="property-label">
+                        MOUNTAIN VIEW
+                    </span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <p class="property-location">
+                        Darjeeling · West Bengal
+                    </p>
+
+                    <h3>
+                        Kanchenjunga View House
+                    </h3>
+
+                    <p class="property-description">
+                        A peaceful hillside retreat with sweeping
+                        views of the Himalayas.
+                    </p>
+
+                    <div class="property-bottom">
+
+                        <div>
+                            <strong>₹2,500</strong>
+                            <span> / night</span>
+                        </div>
+
+                        <button onclick="bookStay('Kanchenjunga View House')">
+                            Enquire
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 2 -->
+
+            <article class="property">
+
+                <div class="property-image property-two">
+
+                    <span class="property-label">
+                        TEA GARDEN
+                    </span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <p class="property-location">
+                        Darjeeling · West Bengal
+                    </p>
+
+                    <h3>
+                        The Tea Garden Retreat
+                    </h3>
+
+                    <p class="property-description">
+                        Wake up surrounded by greenery, mist and
+                        the aroma of Darjeeling tea.
+                    </p>
+
+                    <div class="property-bottom">
+
+                        <div>
+                            <strong>₹3,200</strong>
+                            <span> / night</span>
+                        </div>
+
+                        <button onclick="bookStay('The Tea Garden Retreat')">
+                            Enquire
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 3 -->
+
+            <article class="property">
+
+                <div class="property-image property-three">
+
+                    <span class="property-label">
+                        BOUTIQUE
+                    </span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <p class="property-location">
+                        Darjeeling · West Bengal
+                    </p>
+
+                    <h3>
+                        The Himalayan House
+                    </h3>
+
+                    <p class="property-description">
+                        A warm boutique stay designed for slow
+                        mornings and mountain evenings.
+                    </p>
+
+                    <div class="property-bottom">
+
+                        <div>
+                            <strong>₹4,000</strong>
+                            <span> / night</span>
+                        </div>
+
+                        <button onclick="bookStay('The Himalayan House')">
+                            Enquire
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section class="experience" id="experiences">
+
+        <div class="experience-image"></div>
+
+        <div class="experience-content">
+
+            <p class="eyebrow dark">
+                THE DARJEELING EXPERIENCE
+            </p>
+
+            <h2>
+                Come for the<br>
+                <em>mountains.</em><br>
+                Stay for the feeling.
+            </h2>
+
+            <p>
+                Sunrise over Kanchenjunga. Walks through tea gardens.
+                Quiet cafés hidden in the hills. Conversations with
+                people who call Darjeeling home.
+            </p>
+
+            <button onclick="scrollToStays()">
+                Discover Darjeeling
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOST -->
+
+    <section class="host">
+
+        <div>
+
+            <p class="eyebrow">
+                FOR PROPERTY OWNERS
+            </p>
+
+            <h2>
+                Your home.<br>
+                Their <em>journey.</em>
+            </h2>
+
+            <p>
+                Own a homestay, hotel or holiday home in Darjeeling?
+                Join our growing collection of independent stays.
+            </p>
+
+        </div>
+
+        <button onclick="becomeHost()">
+            List Your Property →
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-brand">
+            <span>DARJEELING</span>
+            <small>STAYS</small>
+        </div>
+
+        <p>
+            Stay closer to the hills.
+        </p>
+
+        <div class="footer-links">
+            <a href="#stays">Stays</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#about">About</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 Darjeeling Stays
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
